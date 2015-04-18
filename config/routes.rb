@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/multimedia' => 'welcome#multimedia'
   get '/support' => 'welcome#support'
   get '/history' => 'welcome#history'
+  get '/session/new' => 'session#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
