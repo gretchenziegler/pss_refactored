@@ -20,4 +20,8 @@ class WelcomeController < ApplicationController
 		render :support
 	end
 
+	def history
+		render :history
+	end
+
 end
