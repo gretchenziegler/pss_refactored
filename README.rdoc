@@ -1,4 +1,4 @@
 Park Slope Singers
 
-Currently in development and staging at (https://park-slope-singers.herokuapp.com/).
+Currently in development and staging at https://park-slope-singers.herokuapp.com.
 
