@@ -1,5 +1,4 @@
-# Park Slope Singers
+Park Slope Singers
 
-## Currently in development and staging [**here**](https://park-slope-singers.herokuapp.com/).
+Currently in development and staging at (https://park-slope-singers.herokuapp.com/).
 
-Check it out and please give feedback. Thanks!
