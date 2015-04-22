@@ -24,4 +24,8 @@ class WelcomeController < ApplicationController
 		render :history
 	end
 
+	def concerts
+		render :concerts
+	end
+
 end

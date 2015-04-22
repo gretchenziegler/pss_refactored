@@ -7,9 +7,11 @@ Rails.application.routes.draw do
   get '/multimedia' => 'welcome#multimedia'
   get '/support' => 'welcome#support'
   get '/history' => 'welcome#history'
+  get '/history/concerts' => 'welcome#concerts'
   get '/members/bylaws' => 'members#bylaws'
   get '/members/schedule' => 'members#schedule'
   get '/members/tracks' => 'members#tracks'
+
 
   resources :session, only: [:create, :destroy, :new]
 
