@@ -8,7 +8,7 @@ class SessionController < ApplicationController
 		member = Member.find_by(email: params[:email])
 		if member and member.authenticate(params[:password])
 			session[:member_id] = member.id
-			redirect_to "/members"
+			redirect_to "/members/#{member.id}"
 		else
 			redirect_to "/session/new"
 		end

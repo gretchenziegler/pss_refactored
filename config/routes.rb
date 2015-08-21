@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/members/bylaws' => 'members#bylaws'
   get '/members/schedule' => 'members#schedule'
   get '/members/tracks' => 'members#tracks'
+  get '/members/dress_code' => 'members#dress_code'
 
 
   resources :session, only: [:create, :destroy, :new]
