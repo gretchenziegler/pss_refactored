@@ -12,9 +12,10 @@ Rails.application.routes.draw do
   get '/members/schedule' => 'members#schedule'
   get '/members/tracks' => 'members#tracks'
   get '/members/dress_code' => 'members#dress_code'
+  get '/session/destroy' => 'session#destroy'
 
 
-  resources :session, only: [:create, :destroy, :new]
+  resources :session, only: [:create, :new]
 
   resources :members
 
