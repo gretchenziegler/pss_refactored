@@ -1,12 +1,13 @@
 <div class="Background">
 	<div class="About">
-		<h2>Members' Area</h2>
-		<h3>Welcome, Name!</h3>
+		<h2>Member Area</h2>
+		<h3>Welcome, <%= @member.f_name %>!</h3>
 
-		<a href="/members/id/edit">Edit Your Information</a>
+		<a href="/members/<%= @member.id %>/edit">Edit Your Information</a>
 		<a href="/members/tracks">Track Listings</a>
 		<a href="/members/schedule">Rehearsal Schedule</a>
 		<a href="/members/bylaws">Dress Code and Bylaws</a>
+		<a href="<%= session_delete_path %>">Log Out</a>
 
 	</div>
 </div>
