@@ -25,7 +25,7 @@ class MembersController < ApplicationController
 
   def update
     authenticate_member
-    member.update({f_name: params[:f_name], l_name: params[:l_name], address: params[:address], email: params[:email], section: params[:section], phone_number: params[:phone_number]})
+    member.update({f_name: params[:f_name], l_name: params[:l_name], address: params[:address], email: params[:email], phone_number: params[:phone_number], password: params[:password]})
 
     redirect_to "/members/#{member.id}"
   end
