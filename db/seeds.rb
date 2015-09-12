@@ -8,4 +8,4 @@
 
 Member.destroy_all
 
-Member.create({f_name: "Gretchen", l_name: "Ziegler", address: "350 19th Street", email: "gretchenziegler@gmail.com", password: "password", section: "alto"})
+Member.create({f_name: "Gretchen", l_name: "Ziegler", address: "350 19th Street", email: "gretchenziegler@gmail.com", password: "pss2015", section: "alto", phone_number: '203-217-6281'})

@@ -12,12 +12,14 @@ Rails.application.routes.draw do
   get '/members/schedule' => 'members#schedule'
   get '/members/tracks' => 'members#tracks'
   get '/members/dress_code' => 'members#dress_code'
+  get '/members/admin' => 'members#admin'
+  get '/members/:id/destroy' => 'members#destroy'
+  get '/members/:id/admin_edit' => 'members#admin_edit'
   get '/session/destroy' => 'session#destroy'
-
 
   resources :session, only: [:create, :new]
 
-  resources :members
+  resources :members, except: :destroy
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

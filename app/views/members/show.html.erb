@@ -3,8 +3,7 @@
 
 		<br>
 		<nav class="members_nav">
-			<a href="/members/<%= @member.id %>">Member Home</a> | 
-			<a href="/members/<%= @member.id %>/edit">Your Profile</a> |  
+			<a href="/members/<%= @member.id %>">Member Home</a> |  
 			<a href="/members/tracks">Track Listings</a> |  
 			<a href="/members/schedule">Schedule</a> | 
 			<a href="/members/dress_code">Dress Code</a> | 
@@ -15,10 +14,24 @@
 		<h2>Member Area</h2>
 		<h3>Welcome, <%= @member.f_name %>!</h3>
 
+    <div id="member_info">
+      <ul>
+        <li><strong>Your Information</strong></li><br>
+        <li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
+        <li><strong>Email:</strong> <%= @member.email %></li>
+        <li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
+        <li><strong>Address:</strong> <%= @member.address %></li>
+        <li><strong>Section:</strong> <%= @member.section %></li>
+      </ul>
+    </div>
+
+    <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
+
 		<hr id="line1">
 		<hr id="line2">
 
 		<h3>Announcements</h3>
 
+    <a href="/members/admin"><button>Admin Log-In</button></a>
 	</div>
 </div>
