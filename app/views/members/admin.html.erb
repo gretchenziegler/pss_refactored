@@ -1,0 +1,21 @@
+<div class="Background">
+  <div class="About">
+
+  <br>
+  <nav class="members_nav">
+    <a href="/members/<%= @member.id %>">Member Home</a> | 
+    <a href="/session/destroy">Log Out</a>
+  </nav>
+
+  <h2>Edit Members</h2>
+
+  <ul class="dress_code">
+    <% @members.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <!-- <a href="/members/<%= member.id%>/admin_edit">EDIT</a> --> <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <a href="/members/new"><button>New Member</button></a>
+
+  </div>
+</div>
