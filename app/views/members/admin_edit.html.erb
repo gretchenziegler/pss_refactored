@@ -1,0 +1,46 @@
+<div class="Background">
+  <div class="About">
+
+    <br>
+    <nav class="members_nav">
+      <a href="/members/<%= @member.id %>">Member Home</a> | 
+      <a href="/session/destroy">Log Out</a>
+    </nav>
+
+    <h2>Edit <%= @member_edit.f_name %> <%= @member_edit.l_name %>'s Information</h2>
+
+    <form action="/members/<%= @member_edit.id %>"  method="POST">
+      <input type="hidden" name="_method" value="PUT"/>
+      <center>
+      <table border="0" cellpadding="10" class="form">
+        <tr>
+            <td>First Name:</td>
+            <td><input class="input" type="text" name="f_name" value="<%= @member_edit.f_name %>" required></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input class="input" type="text" name="l_name" value="<%= @member_edit.l_name %>" required></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input class="input" type="text" name="address" value="<%= @member_edit.address %>" required></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input class="input" type="text" name="phone_number" value="<%= @member_edit.phone_number %>" required></td>
+        </tr>
+        <tr>
+            <td>Section:</td>
+            <td><input class="input" type="text" name="section" value="<%= @member_edit.section %>" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input class="input" type="email" name="email" value="<%= @member_edit.email %>" required></td>
+        </tr>
+      </table></br></br>
+      <button>Submit Changes</button>
+      </center>
+    </form>
+    
+  </div>
+</div>
