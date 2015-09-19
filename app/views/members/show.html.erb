@@ -2,46 +2,47 @@
 	<div class="About">
 
 		<br>
-		<nav class="members_nav">
-			<a href="/members/<%= @member.id %>">Member Home</a> |  
-			<a href="/members/tracks">Track Listings</a> |  
-			<a href="/members/schedule">Schedule</a> | 
-			<a href="/members/dress_code">Dress Code</a> | 
-			<a href="/members/bylaws">By-Laws</a> | 
+    <nav class="members_nav">
+      <a href="/members/<%= @member.id %>">Member Home</a> | 
+      <a href="/members">Roster</a> | 
+      <a href="/members/tracks">Track Listings</a> | 
+      <a href="/members/schedule">Schedule</a> | 
+      <a href="/members/dress_code">Dress Code</a> | 
+      <a href="/members/bylaws">By-Laws</a> | 
       <a href="/session/destroy">Log Out</a>
-		</nav>
+    </nav>
 
 		<h2>Member Area</h2>
 		<h3>Welcome, <%= @member.f_name %>!</h3>
 
-    <div id="member_info">
-      <ul>
-        <li><strong>Your Information</strong></li><br>
-        <li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
-        <li><strong>Email:</strong> <%= @member.email %></li>
-        <li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
-        <li><strong>Address:</strong> <%= @member.address %></li>
-        <li><strong>Section:</strong> <%= @member.section %></li>
-      </ul>
-    </div>
+	<div id="member_info">
+	  <ul>
+		<li><strong>Your Information</strong></li><br>
+		<li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
+		<li><strong>Email:</strong> <%= @member.email %></li>
+		<li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
+		<li><strong>Address:</strong> <%= @member.address %></li>
+		<li><strong>Section:</strong> <%= @member.section %></li>
+	  </ul>
+	</div>
 
-    <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
+	<a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
 
 		<hr id="line1">
 		<hr id="line2">
 
 		<h2>Announcements</h2>
 
-    <h3>Welcome Back, Singers!</h3>
+	<h3>Welcome Back, Singers!</h3>
 
-    <p>Our first rehearsal is <strong>Monday, September 14th at 7:30.</strong> See you there!</p>
+	<p>Our first rehearsal is <strong>Monday, September 14th at 7:30.</strong> See you there!</p>
 
-    <p>If you still have your music from last semester, please bring it with you to rehearsal on Monday. Please erase all pencil marks prior to returning your music.</p>
+	<p>If you still have your music from last semester, please bring it with you to rehearsal on Monday. Please erase all pencil marks prior to returning your music.</p>
 
-    <p>Additionally, please bring a black binder for this semester's music. If you bought a new binder with the hand strap last spring, you can order inserts for them which will accommodate three-hole-punched music.</p>
+	<p>Additionally, please bring a black binder for this semester's music. If you bought a new binder with the hand strap last spring, you can order inserts for them which will accommodate three-hole-punched music.</p>
 
-    <p>This semester, we're singing <em>Ein Deutsches Requiem</em> (A German Requiem) by Brahms. If you are planning on downloading the tracks for this semester instead of using the CD, please contact <a href="mailto:bharvey536@gmail.com">Brett Harvey</a>. She will give you the link to the digital download.</p>
+	<p>This semester, we're singing <em>Ein Deutsches Requiem</em> (A German Requiem) by Brahms. If you are planning on downloading the tracks for this semester instead of using the CD, please contact <a href="mailto:bharvey536@gmail.com">Brett Harvey</a>. She will give you the link to the digital download.</p>
 
-    <a href="/members/admin"><button>Admin Log-In</button></a>
+	<a href="/members/admin"><button>Admin Log-In</button></a>
 	</div>
 </div>
