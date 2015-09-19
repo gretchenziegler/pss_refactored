@@ -6,7 +6,7 @@ class MembersController < ApplicationController
 		authenticate_member
 	end
 
-  def index
+  def roster
     allow_member
     @members = Member.all
   end
