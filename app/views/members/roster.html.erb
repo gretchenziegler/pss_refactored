@@ -15,6 +15,29 @@
     <h2>Member Roster</h2>
     <h3>Fall 2015</h3>
 
+    <h4>Directors</h4>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+      <% @admin.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.section %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <h4>Sopranos</h4>
+
     <table border="1" cellpadding="10" class="support" style="font-size:1em">
       <tr>
         <th>Name</th>
@@ -23,14 +46,92 @@
         <th>Address</th>
         <th>Phone Number</th>
       </tr>
-      <% @members.each do |member| %>
+      <% @sopranos.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.section %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <h4>Altos</h4>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
       <tr>
-        <td><%= member.f_name %> <%= member.l_name %></td>
-        <td><%= member.section %></td>
-        <td><%= member.email %></td>
-        <td><%= member.address %></td>
-        <td><%= member.phone_number %></td>
+        <th>Name</th>
+        <th>Section</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
       </tr>
+      <% @altos.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.section %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <h4>Tenors</h4>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+      <% @tenors.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <h4>Baritones</h4>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+      <% @baritones.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
+      <% end %>
+    </table>
+
+    <h4>Basses</h4>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+      <% @basses.each do |member| %>
+        <tr>
+          <td><%= member.f_name %> <%= member.l_name %></td>
+          <td><%= member.email %></td>
+          <td><%= member.address %></td>
+          <td><%= member.phone_number %></td>
+        </tr>
       <% end %>
     </table>
 
