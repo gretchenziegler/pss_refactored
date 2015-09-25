@@ -24,11 +24,13 @@
         <th>Phone Number</th>
       </tr>
       <% @members.each do |member| %>
+      <tr>
         <td><%= member.f_name %> <%= member.l_name %></td>
         <td><%= member.section %></td>
         <td><%= member.email %></td>
         <td><%= member.address %></td>
         <td><%= member.phone_number %></td>
+      </tr>
       <% end %>
     </table>
 
