@@ -1,0 +1,36 @@
+<div class="Background">
+  <div class="About">
+
+    <br>
+    <nav class="members_nav">
+      <a href="/members/<%= @member.id %>">Member Home</a> | 
+      <a href="/members/roster">Roster</a> | 
+      <a href="/members/tracks">Track Listings</a> | 
+      <a href="/members/schedule">Schedule</a> | 
+      <a href="/members/dress_code">Dress Code</a> | 
+      <a href="/members/bylaws">By-Laws</a> | 
+      <a href="/session/destroy">Log Out</a>
+    </nav>
+
+    <h2>Member Roster</h2>
+    <h3>Fall 2015</h3>
+
+    <table border="1" cellpadding="10" class="support" style="font-size:1em">
+      <tr>
+        <th>Name</th>
+        <th>Section</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+      </tr>
+      <% @members.each do |member| %>
+        <td><%= member.f_name %> <%= member.l_name %></td>
+        <td><%= member.section %></td>
+        <td><%= member.email %></td>
+        <td><%= member.address %></td>
+        <td><%= member.phone_number %></td>
+      <% end %>
+    </table>
+
+  </div>
+</div>

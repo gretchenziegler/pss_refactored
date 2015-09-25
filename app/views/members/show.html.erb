@@ -2,30 +2,31 @@
 	<div class="About">
 
 		<br>
-		<nav class="members_nav">
-			<a href="/members/<%= @member.id %>">Member Home</a> |  
-			<a href="/members/tracks">Track Listings</a> |  
-			<a href="/members/schedule">Schedule</a> | 
-			<a href="/members/dress_code">Dress Code</a> | 
-			<a href="/members/bylaws">By-Laws</a> | 
+    <nav class="members_nav">
+      <a href="/members/<%= @member.id %>">Member Home</a> | 
+      <a href="/members/roster">Roster</a> | 
+      <a href="/members/tracks">Track Listings</a> | 
+      <a href="/members/schedule">Schedule</a> | 
+      <a href="/members/dress_code">Dress Code</a> | 
+      <a href="/members/bylaws">By-Laws</a> | 
       <a href="/session/destroy">Log Out</a>
-		</nav>
+    </nav>
 
 		<h2>Member Area</h2>
 		<h3>Welcome, <%= @member.f_name %>!</h3>
 
-    <div id="member_info">
-      <ul>
-        <li><strong>Your Information</strong></li><br>
-        <li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
-        <li><strong>Email:</strong> <%= @member.email %></li>
-        <li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
-        <li><strong>Address:</strong> <%= @member.address %></li>
-        <li><strong>Section:</strong> <%= @member.section %></li>
-      </ul>
-    </div>
+	<div id="member_info">
+	  <ul>
+		<li><strong>Your Information</strong></li><br>
+		<li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
+		<li><strong>Email:</strong> <%= @member.email %></li>
+		<li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
+		<li><strong>Address:</strong> <%= @member.address %></li>
+		<li><strong>Section:</strong> <%= @member.section %></li>
+	  </ul>
+	</div>
 
-    <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
+	<a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
 
 		<hr id="line1">
 		<hr id="line2">
@@ -46,6 +47,6 @@
 
 		<p>If you would like to purchase your copy of the Brahms Requiem, it costs $4.60. You can give Rick a check or cash.</p>
 
-    <a href="/members/admin"><button>Admin Log-In</button></a>
+	<a href="/members/admin"><button>Admin Log-In</button></a>
 	</div>
 </div>

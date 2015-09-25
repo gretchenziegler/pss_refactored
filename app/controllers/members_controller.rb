@@ -6,6 +6,11 @@ class MembersController < ApplicationController
 		authenticate_member
 	end
 
+  def roster
+    allow_member
+    @members = Member.all
+  end
+
 	def dress_code
 		allow_member
 	end
