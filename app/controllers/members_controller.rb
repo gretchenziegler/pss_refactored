@@ -50,7 +50,12 @@ class MembersController < ApplicationController
 
   def admin
     authenticate_admin
-    @members = Member.all
+    @admin = Member.where(:section => ['Music Director', 'Pianist'])
+    @sopranos = Member.where(['section LIKE ?', "%Soprano%"]).order('l_name ASC')
+    @altos = Member.where(['section LIKE ?', "%Alto%"]).order('l_name ASC')
+    @tenors = Member.where(section: 'Tenor').order('l_name ASC')
+    @baritones = Member.where(section: 'Baritone').order('l_name ASC')
+    @basses = Member.where(section: 'Bass').order('l_name ASC')
   end
 
   def new

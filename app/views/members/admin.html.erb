@@ -9,9 +9,45 @@
 
   <h2>Edit Members</h2>
 
+  <h3>Directors</h3>
   <ul class="dress_code">
-    <% @members.each do |member| %>
-      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <!-- <a href="/members/<%= member.id%>/admin_edit">EDIT</a> --> <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% @admin.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <h3>Sopranos</h3>
+  <ul class="dress_code">
+    <% @sopranos.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <h3>Altos</h3>
+  <ul class="dress_code">
+    <% @altos.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <h3>Tenors</h3>
+  <ul class="dress_code">
+    <% @tenors.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <h3>Baritones</h3>
+  <ul class="dress_code">
+    <% @baritones.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
+  <h3>Basses</h3>
+  <ul class="dress_code">
+    <% @basses.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
     <% end %>
   </ul>
 
