@@ -1,4 +1,4 @@
 Park Slope Singers
 
-Currently in development and staging at https://park-slope-singers.herokuapp.com.
+Check out the site at http://www.parkslopesingers.org - and come see our next concert!
 
