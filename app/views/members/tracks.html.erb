@@ -5,18 +5,31 @@
     <nav class="members_nav">
       <a href="/members/<%= @member.id %>">Member Home</a> | 
       <a href="/members/roster">Roster</a> | 
-      <a href="/members/tracks">Track Listings</a> | 
+      <a href="/members/tracks">Music</a> | 
       <a href="/members/schedule">Schedule</a> | 
       <a href="/members/dress_code">Dress Code</a> | 
       <a href="/members/bylaws">By-Laws</a> | 
       <a href="/session/destroy">Log Out</a>
     </nav>
 
-		<h2>Track Listings</h2>
+		<h2>Concert Repertoire: Spring 2016</h2>
 
-		<p><a href="http://www.partrecordings.com/assets/images/pdffiles/BrahmsRequiemPeters_Track_Breakdown.pdf" target="_blank">Click here to access the track listings for <em>Eine Deutsches Requiem</em> (The German Requiem) by Brahms.</a></p>
+		<p class="text_wall"><a href="http://www.partrecordings.com/honorchoir.php" target="_blank">Download this semester's music</a> (Honor Choir ID: parkslope16, Password: brahms2232)<br>
 
-		<image src="https://upload.wikimedia.org/wikipedia/commons/1/11/Johannes_Brahms_1853.jpg" style="width:35%">
+    <%= link_to "View PDF of Track Listings", "/track_listings.pdf" %></p>
+
+    <h3>Concert Order</h3>
+    <ol>
+      <li><em>Schicksalslied</em>, Brahms</li>
+      <li><em>The Parting Glass</em>, arr. Wailin' Jennys (Women Only)</li>
+      <li><em>Loch Lomond</em>, arr. Vaughan Williams (Men Only)</li>
+      <li><em>My Gentle Harp</em>, Parker</li>
+      <li><em>The Road Home</em>, Paulus</li>
+      <li><em>And I Saw a New Heaven</em>, Bainton</li>
+      <li><em>Toward the Unknown Region</em>, Vaughan Williams</li>
+    </ol>
+
+		<image src="https://upload.wikimedia.org/wikipedia/commons/2/20/Rocky_Mountain_Landscape_by_Albert_Bierstadt,_1870.jpg" width="100%">
 
 	</div>
 </div>
