@@ -24,6 +24,10 @@ class MembersController < ApplicationController
 		allow_member
 	end
 
+  def carnegie
+    allow_member
+  end
+
 	def edit
     authenticate_member
 	end

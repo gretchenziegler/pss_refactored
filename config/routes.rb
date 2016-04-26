@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get '/members/admin' => 'members#admin'
   get '/members/:id/destroy' => 'members#destroy'
   get '/members/:id/admin_edit' => 'members#admin_edit'
+  get '/members/carnegie' => 'members#carnegie'
   get '/session/destroy' => 'session#destroy'
 
   resources :session, only: [:create, :new]
