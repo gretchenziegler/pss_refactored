@@ -38,11 +38,7 @@
 						<td>Email:</td>
 						<td><input class="input" type="email" name="email" value="<%= @member.email %>" required></td>
 				</tr>
-<!-- 				<tr>
-						<td>Password:</td>
-						<td> <input class="input" type="password" name="password" value="<%= @member.password %>" required></td>
-						<input name="authenticity_token" value="<%= form_authenticity_token() %>" type="hidden" />
-				</tr> -->
+				<input name="authenticity_token" value="<%= form_authenticity_token() %>" type="hidden" />
 			</table></br></br>
 			<button>Submit Changes</button>
 			</center>
