@@ -2,9 +2,9 @@ class MembersController < ApplicationController
 
   ADMIN_ID = 1
 
-	def show
-		authenticate_member
-	end
+  def show
+    authenticate_member
+  end
 
   def roster
     allow_member
@@ -16,17 +16,17 @@ class MembersController < ApplicationController
     @basses = Member.where(section: 'Bass').order('l_name ASC')
   end
 
-	def dress_code
-		allow_member
-	end
+  def dress_code
+    allow_member
+  end
 
-	def bylaws
-		allow_member
-	end
+  def bylaws
+    allow_member
+  end
 
-	def edit
+  def edit
     authenticate_member
-	end
+  end
 
   # def admin_edit
   #   authenticate_admin
@@ -40,13 +40,13 @@ class MembersController < ApplicationController
     redirect_to "/members/#{member.id}"
   end
 
-	def schedule
-		allow_member
-	end
+  def schedule
+    allow_member
+  end
 
-	def tracks
-		allow_member
-	end
+  def tracks
+    allow_member
+  end
 
   def admin
     authenticate_admin
@@ -92,9 +92,9 @@ class MembersController < ApplicationController
     end
   end
 
-	def member
-		@member = Member.find(session[:member_id])
-	end
+  def member
+    @member = Member.find(session[:member_id])
+  end
 
   def authenticate_admin
     if session[:member_id] == ADMIN_ID

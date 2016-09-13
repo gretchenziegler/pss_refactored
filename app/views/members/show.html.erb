@@ -30,6 +30,12 @@
       <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
     <% end %>
 
+    <% if @member.section == "Guest" %>
+      <div id="member_info">
+        <p>If you are a new member without a log in, or if you are a current member but have forgotten your email or password, please email Gretchen at <a href="mailto:gretchenziegler@gmail.com?Subject=PSS%20Member" target="_top">gretchenziegler@gmail.com</a>.</p>
+      </div>
+    <% end %>
+
       <hr id="line1">
       <hr id="line2">
 
