@@ -1,7 +1,7 @@
 <div class="Background">
-	<div class="About">
+  <div class="About">
 
-		<br>
+    <br>
     <nav class="members_nav">
       <a href="/members/<%= @member.id %>">Member Home</a> | 
       <a href="/members/roster">Roster</a> | 
@@ -12,32 +12,34 @@
       <a href="/session/destroy">Log Out</a>
     </nav>
 
-		<h2>Member Area</h2>
-		<h3>Welcome, <%= @member.f_name %>!</h3>
+    <h2>Member Area</h2>
+    <h3>Welcome, <%= @member.f_name %>!</h3>
 
-		<div id="member_info">
-		  <ul>
-  			<li><strong>Your Information</strong></li><br>
-  			<li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
-  			<li><strong>Email:</strong> <%= @member.email %></li>
-  			<li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
-  			<li><strong>Address:</strong> <%= @member.address %></li>
-  			<li><strong>Section:</strong> <%= @member.section %></li>
-		  </ul>
-		</div>
+    <% if @member.section != "Guest" %>
+      <div id="member_info">
+        <ul>
+          <li><strong>Your Information</strong></li><br>
+          <li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
+          <li><strong>Email:</strong> <%= @member.email %></li>
+          <li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
+          <li><strong>Address:</strong> <%= @member.address %></li>
+          <li><strong>Section:</strong> <%= @member.section %></li>
+        </ul>
+      </div>
 
-		<a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
+      <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
+    <% end %>
 
-			<hr id="line1">
-			<hr id="line2">
+      <hr id="line1">
+      <hr id="line2">
 
-			<h2>Announcements</h2>
+      <h2>Announcements</h2>
 
-	    <h3><em>As of August 30, 2016</em></h3>
+      <h3><em>As of August 30, 2016</em></h3>
 
-	    <p>Welcome back, singers! Our first rehearsal of this semester will be Monday, September 12, at 7:30 pm.</p>
+      <p>Welcome back, singers! Our first rehearsal of this semester will be Monday, September 12, at 7:30 pm.</p>
 
 
-		<a href="/members/admin"><button>Admin Log-In</button></a>
-	</div>
+    <a href="/members/admin"><button>Admin Log-In</button></a>
+  </div>
 </div>
