@@ -51,6 +51,13 @@
     <% end %>
   </ul>
 
+  <h3>Other</h3>
+  <ul class="dress_code">
+    <% @other.each do |member| %>
+      <li><%= member.f_name %> <%= member.l_name %> | <%= member.email %> | <%= member.section %> | <a href="/members/<%= member.id %>/destroy">DELETE</a> </li>
+    <% end %>
+  </ul>
+
   <a href="/members/new"><button>New Member</button></a>
 
   </div>

@@ -24,10 +24,6 @@ class MembersController < ApplicationController
 		allow_member
 	end
 
-  def carnegie
-    allow_member
-  end
-
 	def edit
     authenticate_member
 	end
@@ -60,6 +56,7 @@ class MembersController < ApplicationController
     @tenors = Member.where(section: 'Tenor').order('l_name ASC')
     @baritones = Member.where(section: 'Baritone').order('l_name ASC')
     @basses = Member.where(section: 'Bass').order('l_name ASC')
+    @other = Member.where(:section => ['Guest', 'Former Member'])
   end
 
   def new
