@@ -13,40 +13,17 @@
     </nav>
 
     <h2>Member Area</h2>
-    <h3>Welcome, <%= @member.f_name %>!</h3>
 
-    <% if @member.section != "Guest" %>
-      <div id="member_info">
-        <ul>
-          <li><strong>Your Information</strong></li><br>
-          <li><strong>Name:</strong> <%= @member.f_name %> <%= @member.l_name %></li>
-          <li><strong>Email:</strong> <%= @member.email %></li>
-          <li><strong>Phone Number:</strong> <%= @member.phone_number %></li>
-          <li><strong>Address:</strong> <%= @member.address %></li>
-          <li><strong>Section:</strong> <%= @member.section %></li>
-        </ul>
-      </div>
+    <hr id="line1">
+    <hr id="line2">
 
-      <a href="/members/<%= @member.id %>/edit"><button>Edit Your Info</button></a>
-    <% end %>
+    <h2>Announcements</h2>
 
-    <% if @member.section == "Guest" %>
-      <div id="member_info">
-        <p>If you are a new member without a log in, or if you are a current member but have forgotten your email or password, please email Gretchen at <a href="mailto:gretchenziegler@gmail.com?Subject=PSS%20Member" target="_top">gretchenziegler@gmail.com</a>.</p>
-      </div>
-    <% end %>
+    <h3><em>As of September 3, 2017</em></h3>
 
-      <hr id="line1">
-      <hr id="line2">
+    <p>Welcome back, singers! Our first rehearsal will be on Monday, September 11, from 7:30 to 10:00 in the parish hall of Saint Savior's.</p>
 
-      <h2>Announcements</h2>
-
-      <h3><em>As of February 7, 2017</em></h3>
-
-      <p>Please let Brett know if you need a copy of <em>The Creation</em>, or if your copy has unfortunately self-destructed.</p>
-
-      <p>If you have yet to pay your dues for the semester, please pay Rick at your earliest convenience. Dues are $160 ($30 of which goes toward member tickets for this semester's concert). You may purchase your music for an additional fee.</p>
-
+    <p>If you have yet to pay your dues for the semester, please pay Rick at your earliest convenience. Dues are $160 ($30 of which goes toward member tickets for this semester's concert). You may purchase your music for an additional fee.</p>
 
     <a href="/members/admin"><button>Admin Log-In</button></a>
   </div>
