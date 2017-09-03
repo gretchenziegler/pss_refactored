@@ -1,6 +1,6 @@
 class MembersController < ApplicationController
 
-  ADMIN_ID = 1
+  ADMIN_ID = 109
 
   def show
     authenticate_member
@@ -27,11 +27,6 @@ class MembersController < ApplicationController
   def edit
     authenticate_member
   end
-
-  # def admin_edit
-  #   authenticate_admin
-  #   @member_edit = Member.find(params[:id])
-  # end
 
   def update
     authenticate_member
