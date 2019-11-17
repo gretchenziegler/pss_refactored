@@ -160,11 +160,12 @@ video {
 
 #concert_image {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/79/Queen_Anne_-_Lely_1667-8.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
-  height: 500px;
+  height: 800px;
   padding-top: 0.3%;
   margin-top: 2%;
+  background-position: 60% 15%;
 }
 
 #concert_image h4 {
@@ -172,17 +173,13 @@ video {
   color: white;
 }
 
-#concert_image h2 {
-  font-family: 'Old Standard TT', serif;
-  font-style: italic;
-  font-size: 4em;
-  color: #8a7bff;
-  margin-bottom: -2%;
-  text-shadow:
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    -1px 1px 0 white,
-    1px 1px 0 white;
+#concert_image h5 {
+  color: white;
+}
+
+#concert_image h3 {
+  font-family: 'Playfair Display', serif;
+  color: white;
 }
 
 #with {
@@ -199,11 +196,14 @@ video {
 #concert_left {
   float: left;
   width: 45%;
-  margin-left: 2%;
+  margin-left: -2%;
+  margin-top: 35%;
   color: #FF9966;
 }
 
 #concert_right {
+  margin-top: 35%;
+  margin-right: -2%;
   float: right;
   width: 45%;
   color: #FF9966;
