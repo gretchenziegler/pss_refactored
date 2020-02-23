@@ -1,0 +1,13 @@
+//= link sing_logo.png
+//= link brewster.png
+//= link application.css
+//= link application.js
+//= link twitter.png
+//= link youtube.png
+//= link facebook.png
+//= link full_choir_2017.jpg
+//= link balint_varga.png
+//= link timothy_parsons.jpg
+//= link tk.jpg
+//= link round_table.jpg
+//= link men_group.jpg
